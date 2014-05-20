@@ -5,7 +5,7 @@
   var MAX_HEIGHT = 350;
   var MAX_WIDTH = 350;
 
-  var PATH_TO_SONG = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.ogg";
+  var PATH_TO_SONG = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
 
   var CSS_BASE_CLASS = "mw-harlem_shake_me";
   var CSS_SLOW_CLASS = "mw-harlem_shake_slow";
@@ -137,7 +137,7 @@
       removeAddedFiles();
     }, true);
 
-    audioTag.innerHTML = "<p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p>";
+    audioTag.innerHTML = "<p>Ta przeglądarka nie obsługuje formatu audio, który użyty jest skrypcie. Chrome najlepszy! xD</p>";
 
     document.body.appendChild(audioTag);
     audioTag.play();
@@ -180,7 +180,7 @@
   }
 
   if (thisNode === null) {
-    console.warn("Could not find a node of the right size. Please try a different page.");
+    console.warn("Z tą stroną nie da się nic zrobić! ;p");
     return;
   }
 
